@@ -1,0 +1,272 @@
+.rside{
+	box-shadow: 10px 10px 5px gray; 
+}
+
+.subscription{
+	padding-left: 250px;
+	padding-top: 30px;
+}
+
+.sub_head{
+	padding-left: 140px;
+	color: red;
+}
+
+.sub_para{
+	padding-left: 70px;
+	color: green;
+}
+
+.sub_box{
+	border: 5px solid red;
+	margin-right: 150px;
+	padding-left: 60px;
+	margin-left: -45px;
+	height: 175px;
+}
+
+.sub_mail{
+	margin-left: 100px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.sub_button {
+	margin-left: 145px;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	background-color: #4CAF50;
+}
+
+.appointment{
+	padding-left: 250px;
+	padding-top: 30px;
+}
+
+.appointment_box{
+	border: 5px dashed green;
+	margin-right: 75px;
+	padding-left: 250px;
+	margin-left: -115px;
+	height: 157px;
+}
+
+.app_head{
+	color: red;
+}
+
+.pat_name{
+ 	margin-left: -115px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.app_time{
+	margin-left: 50px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+
+}
+
+.select_doc{
+	margin-left: -115px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+
+}
+
+.app_button{
+	margin-left: 50px;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	background-color: #4CAF50;
+}
+
+.predict{
+	padding-top: 30px;
+}
+.predict_box{
+	border: 5px dotted blue;
+	margin-right: 30px;
+	padding-left: 290px;
+	margin-left: 85px;
+	height: 220px;
+}
+
+.predict_head{
+	color: red;
+}
+
+.predict_age{
+	margin-left: -255px;
+	font-family: inherit;
+	width: 150px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_sex{
+	margin-left: 15px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_cp{
+	margin-left: 70px;
+	font-family: inherit;
+	width: 190px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_restecg{
+	margin-left: -255px;
+	font-family: inherit;
+	width: 250px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_thalach{
+	margin-left: 15px;
+	font-family: inherit;
+	width: 300px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_slope{
+	margin-left: -255px;
+	font-family: inherit;
+	width: 250px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predit_chol{
+	margin-left: 15px;
+	font-family: inherit;
+	width: 150px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_fbs{
+	margin-left: 55px;
+	font-family: inherit;
+	width: 220px;
+  	border: 0;
+  	border-bottom: 2px solid gray;
+  	outline: 0;
+  	font-size: 1.3rem;
+  	color: black;
+  	padding: 7px 0;
+  	background: transparent;
+  	transition: border-color 0.2s;
+}
+
+.predict_button{
+	margin-left: 50px;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	background-color: #4CAF50;
+}
+
+.about_head{
+	color: red;
+	margin-left: 450px;
+}
+
+.about_para{
+	margin-left: 100px;
+	margin-right: 20px;
+	color: gray;
+}

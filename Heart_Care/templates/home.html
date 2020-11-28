@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>HertiHealth</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/lside.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/rside.css' %}">
+</head>
+<body>
+<div class="main">
+	<div class="lside">
+		<div class="lside_header">
+      		<a href="{% url 'home' %}" class="lside_anchor"><img src="{% static '/images/heart_icon.png'%}" height="30px" width = "30px" align="left"><h1 class="lside_head"> HeartiHealth</h1></a>
+    	</div>
+    	<div class="lside_caption">
+    		<img src="{% static '/images/heart_head.jpg' %}" alt="Heart" class="lside_image">
+    		<div class="content_image">
+    		Protect Your Heart
+    		</div>        
+    	</div>
+		<div class="lside_services">
+			<ul class="lside_items">
+				<li> <b><a href="{% url 'home' %}" class="lside_services_anchor">Home</a></b> </li>
+				<li> <b><a href="{% url 'services' %}" class="lside_services_anchor">Services</a></b></li>
+				<li> <b><a href="{% url 'doctors' %}" class="lside_services_anchor">Doctors</a></b> </li>
+				<li> <b><a href="#about" class="lside_services_anchor">About</a></b></li>
+				<li> <b><a href="#contact" class="lside_services_anchor">Contact Us</a></b> </li>
+			</ul>
+		</div>
+		<div class="lside_footer" id="contact">
+			<p class="contact_details">Call:</p>
+			<p class="contact_details">+808384828485 </p>
+			<p class="contact_details">Mail:</p>
+			<p class="contact_details">infohh@gmail.com </p>
+		</div>
+	</div>
+	<div class="rside">
+		<div class="subscription">
+			<div class="sub_box">
+				<h3 class="sub_head"> Subscription </h3>
+				<p class="sub_para"> Subscribe to get daily health updates</p> 
+				<form action="#" method="post"> {% csrf_token %}
+					<input type="email" name="sub_mail" class="sub_mail" placeholder="Enter Your Email">
+					<br>
+					<br>
+					<input type="submit" value="Subscribe" class="sub_button">
+				</form>
+			</div>
+		</div>
+		<div class="appointment">
+			<div class="appointment_box">
+				<h3 class="app_head">
+					Doctor's Appointment
+				</h3>
+				<form action="#" method="post">{% csrf_token %}
+					<input type="text" name="patient_name" class="pat_name" placeholder="Enter Your Name">
+					<input type="date" name="date" class="app_time">
+					<br>
+
+					<select name="doc's name"  class="select_doc">
+						<option value="choose_doctor">Choose a Doctor </option>
+						<option value="doc1">Alam</option>
+						<option value="doc2">David</option>
+						<option value="doc3">Forkul</option>
+						<option value="doc4">Goodwen</option>
+						<option value="doc5">Olsen</option>
+						<option value="doc6">Ovlatin</option>
+					</select>
+					<input type="submit" value="Book" class="app_button">
+				</form>
+			</div>
+		</div>
+		<div class="predict">
+			<div class="predict_box">
+				<h3 class="predict_head">
+					Heart Attack Prediction
+				</h3>
+				<form action="/prediction-results" method="post">{% csrf_token %}
+					<input type="text" name="age" class="predict_age" placeholder="Enter your Age" required>
+					<select name="sex" class="predict_sex" required>
+						<option value="gender">Select Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+					<select name="cp" class="predict_cp" required>
+						<option value="cp"> Chest Pain Type</option>
+						<option value="Typical Angina">Typical Angina</option>
+						<option value="Atypical Angina">Atypical Angina</option>
+						<option value="Non-Angina">Non-Angina</option>
+						<option value="Asymptomatic">Asymptomatic</option>
+					</select>
+					<br>
+					<select name="restecg" class="predict_restecg" required>
+						<option value="restecg">Resting Electrocardiographic Results</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+					<input type="text" name="thalach" placeholder="Maximum Heart Rate Achieved" required class="predict_thalach">
+					<br>
+					<select name="slope" class="predict_slope" required>
+						<option value="slope">Slope of the Peak Exercise</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option> 
+					</select>
+					<input type="text" name="chol" placeholder="Cholestrol" required class="predit_chol">
+					<select name="fbs" class="predict_fbs" required>
+						<option value="fbs">Fasting Blood Sugar</option>
+						<option value="No">No</option>
+						<option value="Yes">Yes</option>
+					</select>
+					<br>
+					<br>
+					<input type="submit" value="Predict" class="predict_button">
+				</form>
+			</div>
+		</div>
+		<div class="about" id="about">
+			<div class="about_det">
+				<h3 class="about_head"> About</h3>
+				<p class="about_para">We believe in providing value based care to our patients and keeping them healthy with a holistic treatment approach. You and your care givers will be given access to our healthcare App.</p> 
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

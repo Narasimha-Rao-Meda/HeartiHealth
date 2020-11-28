@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>HertiHealth</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/lside.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/services.css' %}">
+</head>
+<body>
+<div class="main">
+	<div class="lside">
+		<div class="lside_header">
+      		<a href="{% url 'home' %}" class="lside_anchor"><img src="{% static '/images/heart_icon.png'%}" height="30px" width = "30px" align="left"><h1 class="lside_head"> HeartiHealth</h1></a>
+    	</div>
+    	<div class="lside_caption">
+    		<img src="{% static '/images/heart_head.jpg' %}" alt="Heart" class="lside_image">
+    		<div class="content_image">
+    		Protect Your Heart
+    		</div>        
+    	</div>
+		<div class="lside_services">
+			<ul class="lside_items">
+				<li> <b><a href="{% url 'home' %}" class="lside_services_anchor">Home</a></b> </li>
+				<li> <b><a href="{% url 'services' %}" class="lside_services_anchor">Services</a></b></li>
+				<li> <b><a href="{% url 'doctors' %}" class="lside_services_anchor">Doctors</a></b> </li>
+				<li> <b><a href="#contact" class="lside_services_anchor">Contact Us</a></b> </li>
+			</ul>
+		</div>
+		<div class="lside_footer" id="contact">
+			<p class="contact_details">Call:</p>
+			<p class="contact_details">+808384828485 </p>
+			<p class="contact_details">Mail:</p>
+			<p class="contact_details">infohh@gmail.com </p>
+		</div>
+	</div>
+	<div class="services_ls">
+	<div class="services">
+		<h2 class="ser_head">
+		Services</h2>
+		<div class="first_div">
+			<div class="so">
+				<img src="{% static '/images/s1.jpg'%}" width="250px" height="150px">
+				<h2 class="s1_head">ECG</h2>
+			</div>
+			<div class="se">
+				<img src="{% static '/images/s2.jpg' %}" width="250px" height="150px">
+				<h2 class="s2_head">Stress ECG</h2>
+			</div>
+		</div>
+		<div class="second_div">
+			<div class="so">
+				<img src="{% static '/images/s3.jpg'%}" width="250px" height="150px">
+				<h2 class="s3_head">Angiography</h2>
+			</div>
+			<div class="se">
+				<img src="{% static '/images/s4.jpg'%}" width="250px" height="150px">
+				<h2 class="s4_head">24 Hr Holter</h2>
+			</div>
+		</div>
+		<div class="third_div">
+			<div class="so">
+				<img src="{% static '/images/s5.jpg'%}" width="250px" height="150px">
+				<h2 class="s5_head">Pacemaker Check</h2>
+			</div>
+			<div class="se">
+				<img src="{% static '/images/s6.jpg'%}" width="250px" height="150px">
+				<h2 class="s6_head">Cardiac Surgery</h2>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.main {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.lside {
+	width: 350px;
+	height: auto;
+	float: left;
+}
+
+.rside{
+	width: 889px;
+	margin-left: 350px;
+}

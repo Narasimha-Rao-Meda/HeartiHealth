@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HeartiHealth</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/lside.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/predict.css' %}">
+</head>
+<body>
+	<div class="main">
+	<div class="lside">
+		<div class="lside_header">
+      		<a href="{% url 'home' %}" class="lside_anchor"><img src="{% static '/images/heart_icon.png'%}" height="30px" width = "30px" align="left"><h1 class="lside_head"> HeartiHealth</h1></a>
+    	</div>
+    	<div class="lside_caption">
+    		<img src="{% static '/images/heart_head.jpg' %}" alt="Heart" class="lside_image">
+    		<div class="content_image">
+    		Protect Your Heart
+    		</div>        
+    	</div>
+		<div class="lside_services">
+			<ul class="lside_items">
+				<li> <b><a href="{% url 'home' %}" class="lside_services_anchor">Home</a></b> </li>
+				<li> <b><a href="{% url 'services' %}" class="lside_services_anchor">Services</a></b></li>
+				<li> <b><a href="{% url 'doctors' %}" class="lside_services_anchor">Doctors</a></b> </li>
+				<li> <b><a href="#contact" class="lside_services_anchor">Contact Us</a></b> </li>
+			</ul>
+		</div>
+		<div class="lside_footer" id="contact">
+			<p class="contact_details">Call:</p>
+			<p class="contact_details">+808384828485 </p>
+			<p class="contact_details">Mail:</p>
+			<p class="contact_details">infohh@gmail.com </p>
+		</div>
+	</div>
+	<div class="predict_res">
+		<div class="results">
+			<div class="results_predict">
+				<h3 class="pred"> Prediction Results</h3>
+				<label class="head_res">
+					Age
+				</label>
+				<br>
+				<p class="res">{{ age }} </p>
+				<label class="head_res">
+					Gender
+				</label>
+				<br>
+				<p class="res">{{ sex }}</p>
+				<label class="head_res">
+					Chest Pain Type
+				</label>
+				<p class="res">{{ cp }}</p>
+				<label class="head_res">
+					Resting Electrocardiograph Results
+				</label>
+				<p class="res">{{ restecg }}</p>
+				<label class="head_res">
+					Maximum Heart Rate Achieved
+				</label>
+				<p class="res">{{ thalach }}</p>
+				<label class="head_res">Slope of the Peak Exercise</label>
+				<p class="res">{{ slope }}</p>
+				<label class="head_res">
+					Cholestrol
+				</label>
+				<p class="res">{{ chol }}</p>
+				<label class="head_res">
+					Fasting Blood Sugar
+				</label>
+				<p class="res">{{ fbs }}</p>
+				<p class="res_res"> You have {{ percentage }} chances of Heart Stroke</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

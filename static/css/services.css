@@ -1,0 +1,47 @@
+.services_ls {
+	box-shadow: 10px 10px 5px gray;
+	width: 889px;
+	margin-left: 350px;
+	height: 727px;
+}
+
+.services{
+	padding-top: 20px;
+}
+
+.ser_head{
+	color: red;
+	padding-left: 400px;
+}
+
+.so{
+	width: 300px;
+	float: left;
+	padding-left: 120px;
+}
+.se{
+	float: left;
+	padding-left: 90px;
+}
+
+
+.s1_head{
+	padding-left: 90px;
+}
+
+.s2_head{
+	padding-left: 80px;
+}
+
+.s3_head{
+	padding-left: 70px;
+}
+.s4_head{
+	padding-left: 60px;
+}
+.s5_head{
+	padding-left: 40px;
+}
+.s6_head{
+	padding-left: 50px;
+}

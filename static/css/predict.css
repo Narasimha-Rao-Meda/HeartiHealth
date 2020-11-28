@@ -1,0 +1,40 @@
+.predict_res{
+	box-shadow: 10px 10px 5px gray;
+	width: 889px;
+	margin-left: 350px;
+	height: 727px;
+}
+
+.results{
+	padding-left: 300px;
+	padding-top: 50px;
+}
+
+.results_predict{
+	box-shadow: 10px 10px 5px gray;
+	border: 3px solid gray;
+	margin-left: -200px;
+	padding-left: 100px;
+	margin-right: 120px;
+	height: 650px;
+}
+.pred{
+	padding-left: 100px;
+	color: Blue;
+}
+.head_res{
+	color:green;
+	font-family: Georgia, serif;
+	padding-left: 140px;
+}
+
+.res{
+	color:red;
+	font-family: Georgia, serif;
+	padding-left: 140px;
+}
+.res_res{
+	color: blue;
+	padding-left: 100px;
+	font-family: Georgia, serif;
+}
